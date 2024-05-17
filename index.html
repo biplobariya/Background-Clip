@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS background Clip</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Freeman&display=swap');
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Freeman", sans-serif;
+    }
+
+    .main_div{
+      width: 100vw;
+      height: 100vh;
+      display: grid;
+      place-items: center;
+      background-color: #000;
+    }
+
+    h1{
+      color: transparent;
+      font-size: 52px;
+      font-weight: bold;
+      background-image: url("https://images.pexels.com/photos/1054218/pexels-photo-1054218.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+      background-size: 100% 100%;
+      background-clip: text;
+      -webkit-background-clip: text;
+      -moz-background-clip: text;
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="main_div">
+    <h1>This is background clip</h1>
+  </div>
+  
+</body>
+</html>
